@@ -1,0 +1,137 @@
+<!-- <ElixirT2Web.Layouts.root> lib/elixir_t2_web/components/layouts/root.html.heex:1 (elixir_t2) --><!DOCTYPE html>
+<html data-phx-loc="2" lang="en">
+  <head data-phx-loc="3">
+    <meta data-phx-loc="4" charset="utf-8">
+    <meta data-phx-loc="5" name="viewport" content="width=device-width, initial-scale=1">
+    <meta data-phx-loc="6" name="csrf-token" content="G31_HCESSQwhPgNRM2UJKWAnMyoIJjMDQ87VUAdVSULcF-8G7OwbBVcp">
+    <!-- @caller lib/elixir_t2_web/components/layouts/root.html.heex:7 (elixir_t2) --><!-- <Phoenix.Component.live_title> lib/phoenix_component.ex:2256 (phoenix_live_view) --><title data-phx-loc="2257" data-default="ElixirT2" data-suffix=" · Phoenix Framework">ElixirT2 · Phoenix Framework</title><!-- </Phoenix.Component.live_title> -->
+    <link data-phx-loc="10" phx-track-static rel="stylesheet" href="/assets/css/app.css">
+    <script data-phx-loc="11" defer phx-track-static type="text/javascript" src="/assets/js/app.js">
+    </script>
+    <script data-phx-loc="13">
+      (() => {
+        const setTheme = (theme) => {
+          if (theme === "system") {
+            localStorage.removeItem("phx:theme");
+            document.documentElement.removeAttribute("data-theme");
+          } else {
+            localStorage.setItem("phx:theme", theme);
+            document.documentElement.setAttribute("data-theme", theme);
+          }
+        };
+        if (!document.documentElement.hasAttribute("data-theme")) {
+          setTheme(localStorage.getItem("phx:theme") || "system");
+        }
+        window.addEventListener("storage", (e) => e.key === "phx:theme" && setTheme(e.newValue || "system"));
+        
+        document.addEventListener("DOMContentLoaded", () => {
+          document
+            .querySelectorAll("button[data-phx-theme]")
+            .forEach((el) => {
+              el.addEventListener("click", () => {
+                setTheme(el.dataset.phxTheme)
+              })
+            })
+        })
+      })();
+    </script>
+  </head>
+  <body data-phx-loc="41">
+    <!-- <ElixirT2Web.PageHTML.article> lib/elixir_t2_web/controllers/page_html/article.html.heex:1 (elixir_t2) --><main data-phx-loc="1" class="p-8 max-w-4xl mx-auto">
+  <div data-phx-loc="2" class="mb-6">
+    <a data-phx-loc="3" href="/" class="btn btn-ghost btn-sm">← Back to Home</a>
+  </div>
+  
+  <article data-phx-loc="6" class="space-y-6">
+    <div data-phx-loc="7">
+      <h1 data-phx-loc="8" class="text-5xl font-bold mb-4">Building Static Sites with Phoenix and daisyUI</h1>
+      
+      <div data-phx-loc="10" class="flex gap-2 mb-6">
+        <span data-phx-loc="11" class="badge badge-primary">Phoenix</span>
+        <span data-phx-loc="12" class="badge badge-secondary">Elixir</span>
+        <span data-phx-loc="13" class="badge badge-accent">daisyUI</span>
+      </div>
+      
+      <p data-phx-loc="16" class="text-xl text-base-content/80 leading-relaxed">
+        Phoenix Framework combined with daisyUI creates a powerful toolkit for building beautiful static websites with minimal effort.
+      </p>
+    </div>
+    
+    <div data-phx-loc="21" class="divider"></div>
+    
+    <div data-phx-loc="23">
+      <h2 data-phx-loc="24" class="text-3xl font-bold mb-4">Why Phoenix for Static Sites?</h2>
+      
+      <p data-phx-loc="26" class="text-lg leading-relaxed mb-4">
+        While Phoenix is known for its real-time capabilities and LiveView, it's also an excellent choice for static site generation. The framework provides:
+      </p>
+      
+      <ul data-phx-loc="30" class="list-disc list-inside space-y-2 text-lg ml-4">
+        <li data-phx-loc="31">Fast compilation and build times</li>
+        <li data-phx-loc="32">Powerful templating with HEEx</li>
+        <li data-phx-loc="33">Built-in asset pipeline</li>
+        <li data-phx-loc="34">Easy deployment options</li>
+      </ul>
+    </div>
+    
+    <div data-phx-loc="38">
+      <h2 data-phx-loc="39" class="text-3xl font-bold mb-4">The Power of daisyUI</h2>
+      
+      <p data-phx-loc="41" class="text-lg leading-relaxed mb-4">
+        daisyUI is a component library built on top of Tailwind CSS. It provides:
+      </p>
+      
+      <div data-phx-loc="45" class="alert alert-info my-6">
+        <svg data-phx-loc="46" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6"><path data-phx-loc="46" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        <span data-phx-loc="47">daisyUI components are semantic, accessible, and themeable out of the box!</span>
+      </div>
+      
+      <ol data-phx-loc="50" class="list-decimal list-inside space-y-2 text-lg ml-4">
+        <li data-phx-loc="51">Pre-built, beautiful components</li>
+        <li data-phx-loc="52">Multiple theme options</li>
+        <li data-phx-loc="53">Semantic class names</li>
+        <li data-phx-loc="54">Full Tailwind CSS compatibility</li>
+      </ol>
+    </div>
+    
+    <div data-phx-loc="58">
+      <h2 data-phx-loc="59" class="text-3xl font-bold mb-4">Getting Started</h2>
+      
+      <p data-phx-loc="61" class="text-lg leading-relaxed mb-4">
+        To create your own static Phoenix site with daisyUI, follow these steps:
+      </p>
+      
+      <div data-phx-loc="65" class="mockup-code my-6">
+        <pre data-phx-loc="66" data-prefix="$"><code data-phx-loc="66">mix phx.new my_app --no-ecto --no-live</code></pre>
+        <pre data-phx-loc="67" data-prefix="$"><code data-phx-loc="67">cd my_app</code></pre>
+        <pre data-phx-loc="68" data-prefix="$"><code data-phx-loc="68">mix deps.get</code></pre>
+        <pre data-phx-loc="69" data-prefix="$"><code data-phx-loc="69">mix tailwind.install</code></pre>
+      </div>
+    </div>
+    
+    <div data-phx-loc="73">
+      <h2 data-phx-loc="74" class="text-3xl font-bold mb-4">Deployment</h2>
+      
+      <p data-phx-loc="76" class="text-lg leading-relaxed mb-4">
+        Once you've built your site, you can deploy it to GitHub Pages, Netlify, Vercel, or any static hosting service. The build process generates a <code data-phx-loc="77" class="bg-base-200 px-2 py-1 rounded">public/</code> directory with all your static assets ready to serve.
+      </p>
+      
+      <div data-phx-loc="80" class="card bg-base-200 my-6">
+        <div data-phx-loc="81" class="card-body">
+          <h3 data-phx-loc="82" class="card-title text-2xl">Pro Tip</h3>
+          <p data-phx-loc="83" class="text-lg">Use GitHub Actions to automate your deployment process. Every push to main can trigger a new build and deployment!</p>
+        </div>
+      </div>
+    </div>
+    
+    <div data-phx-loc="88">
+      <h2 data-phx-loc="89" class="text-3xl font-bold mb-4">Conclusion</h2>
+      
+      <p data-phx-loc="91" class="text-lg leading-relaxed">
+        Phoenix and daisyUI make a fantastic combination for static site generation. You get the power and flexibility of Phoenix with the beautiful, pre-built components of daisyUI. Happy building!
+      </p>
+    </div>
+  </article>
+</main><!-- </ElixirT2Web.PageHTML.article> -->
+  <iframe hidden height="0" width="0" src="/phoenix/live_reload/frame"></iframe></body>
+</html><!-- </ElixirT2Web.Layouts.root> -->

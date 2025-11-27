@@ -1,0 +1,94 @@
+<!-- <ElixirT2Web.Layouts.root> lib/elixir_t2_web/components/layouts/root.html.heex:1 (elixir_t2) --><!DOCTYPE html>
+<html data-phx-loc="2" lang="en">
+  <head data-phx-loc="3">
+    <meta data-phx-loc="4" charset="utf-8">
+    <meta data-phx-loc="5" name="viewport" content="width=device-width, initial-scale=1">
+    <meta data-phx-loc="6" name="csrf-token" content="Q0AfOTYiFjsUOQ0mDDtGBiV8AW0uMA1Fr0kUWVeSDKyaeW4cf055mTNp">
+    <!-- @caller lib/elixir_t2_web/components/layouts/root.html.heex:7 (elixir_t2) --><!-- <Phoenix.Component.live_title> lib/phoenix_component.ex:2256 (phoenix_live_view) --><title data-phx-loc="2257" data-default="ElixirT2" data-suffix=" · Phoenix Framework">ElixirT2 · Phoenix Framework</title><!-- </Phoenix.Component.live_title> -->
+    <link data-phx-loc="10" phx-track-static rel="stylesheet" href="/assets/css/app.css">
+    <script data-phx-loc="11" defer phx-track-static type="text/javascript" src="/assets/js/app.js">
+    </script>
+    <script data-phx-loc="13">
+      (() => {
+        const setTheme = (theme) => {
+          if (theme === "system") {
+            localStorage.removeItem("phx:theme");
+            document.documentElement.removeAttribute("data-theme");
+          } else {
+            localStorage.setItem("phx:theme", theme);
+            document.documentElement.setAttribute("data-theme", theme);
+          }
+        };
+        if (!document.documentElement.hasAttribute("data-theme")) {
+          setTheme(localStorage.getItem("phx:theme") || "system");
+        }
+        window.addEventListener("storage", (e) => e.key === "phx:theme" && setTheme(e.newValue || "system"));
+        
+        document.addEventListener("DOMContentLoaded", () => {
+          document
+            .querySelectorAll("button[data-phx-theme]")
+            .forEach((el) => {
+              el.addEventListener("click", () => {
+                setTheme(el.dataset.phxTheme)
+              })
+            })
+        })
+      })();
+    </script>
+  </head>
+  <body data-phx-loc="41">
+    <!-- <ElixirT2Web.PageHTML.page2> lib/elixir_t2_web/controllers/page_html/page2.html.heex:1 (elixir_t2) --><main data-phx-loc="1" class="p-8">
+  <div data-phx-loc="2" class="mb-6">
+    <a data-phx-loc="3" href="/" class="btn btn-ghost btn-sm">← Back to Home</a>
+  </div>
+  
+  <h1 data-phx-loc="6" class="text-4xl font-bold mb-6">Page 2 - Buttons & Badges</h1>
+  
+  <div data-phx-loc="8" class="mb-8">
+    <h2 data-phx-loc="9" class="text-2xl font-semibold mb-4">Button Variants</h2>
+    <div data-phx-loc="10" class="flex flex-wrap gap-4">
+      <button data-phx-loc="11" class="btn btn-primary">Primary</button>
+      <button data-phx-loc="12" class="btn btn-secondary">Secondary</button>
+      <button data-phx-loc="13" class="btn btn-accent">Accent</button>
+      <button data-phx-loc="14" class="btn btn-info">Info</button>
+      <button data-phx-loc="15" class="btn btn-success">Success</button>
+      <button data-phx-loc="16" class="btn btn-warning">Warning</button>
+      <button data-phx-loc="17" class="btn btn-error">Error</button>
+    </div>
+  </div>
+  
+  <div data-phx-loc="21" class="mb-8">
+    <h2 data-phx-loc="22" class="text-2xl font-semibold mb-4">Button Sizes</h2>
+    <div data-phx-loc="23" class="flex flex-wrap gap-4 items-center">
+      <button data-phx-loc="24" class="btn btn-primary btn-xs">Tiny</button>
+      <button data-phx-loc="25" class="btn btn-primary btn-sm">Small</button>
+      <button data-phx-loc="26" class="btn btn-primary">Normal</button>
+      <button data-phx-loc="27" class="btn btn-primary btn-lg">Large</button>
+    </div>
+  </div>
+  
+  <div data-phx-loc="31" class="mb-8">
+    <h2 data-phx-loc="32" class="text-2xl font-semibold mb-4">Badges</h2>
+    <div data-phx-loc="33" class="flex flex-wrap gap-4">
+      <span data-phx-loc="34" class="badge badge-primary">Primary</span>
+      <span data-phx-loc="35" class="badge badge-secondary">Secondary</span>
+      <span data-phx-loc="36" class="badge badge-accent">Accent</span>
+      <span data-phx-loc="37" class="badge badge-info">Info</span>
+      <span data-phx-loc="38" class="badge badge-success">Success</span>
+      <span data-phx-loc="39" class="badge badge-warning">Warning</span>
+      <span data-phx-loc="40" class="badge badge-error">Error</span>
+    </div>
+  </div>
+  
+  <div data-phx-loc="44" class="mb-8">
+    <h2 data-phx-loc="45" class="text-2xl font-semibold mb-4">Badge Sizes</h2>
+    <div data-phx-loc="46" class="flex flex-wrap gap-4 items-center">
+      <span data-phx-loc="47" class="badge badge-primary badge-xs">XS</span>
+      <span data-phx-loc="48" class="badge badge-primary badge-sm">SM</span>
+      <span data-phx-loc="49" class="badge badge-primary badge-md">MD</span>
+      <span data-phx-loc="50" class="badge badge-primary badge-lg">LG</span>
+    </div>
+  </div>
+</main><!-- </ElixirT2Web.PageHTML.page2> -->
+  <iframe hidden height="0" width="0" src="/phoenix/live_reload/frame"></iframe></body>
+</html><!-- </ElixirT2Web.Layouts.root> -->

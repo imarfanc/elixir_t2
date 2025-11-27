@@ -23,6 +23,8 @@ jobs:
 
       - name: Install dependencies & build static site
         run: |
+          sudo apt-get update
+          sudo apt-get install -y wget
           mix deps.get
           mix tailwind.install
           chmod +x build.sh
