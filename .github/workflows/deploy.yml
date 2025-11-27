@@ -20,8 +20,8 @@ jobs:
       - name: Setup Elixir
         uses: erlef/setup-beam@v1
         with:
-          elixir-version: "1.14" # or your version
-          otp-version: "25.3" # or your OTP version
+          elixir-version: "1.17.3"
+          otp-version: "27.1"
 
       - name: Install dependencies & build static site
         run: |

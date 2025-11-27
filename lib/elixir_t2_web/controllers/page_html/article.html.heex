@@ -3,80 +3,94 @@
     <a href="/" class="btn btn-ghost btn-sm">← Back to Home</a>
   </div>
   
-  <article class="prose lg:prose-xl">
-    <h1>Building Static Sites with Phoenix and daisyUI</h1>
-    
-    <div class="flex gap-2 mb-6">
-      <span class="badge badge-primary">Phoenix</span>
-      <span class="badge badge-secondary">Elixir</span>
-      <span class="badge badge-accent">daisyUI</span>
+  <article class="space-y-6">
+    <div>
+      <h1 class="text-5xl font-bold mb-4">Building Static Sites with Phoenix and daisyUI</h1>
+      
+      <div class="flex gap-2 mb-6">
+        <span class="badge badge-primary">Phoenix</span>
+        <span class="badge badge-secondary">Elixir</span>
+        <span class="badge badge-accent">daisyUI</span>
+      </div>
+      
+      <p class="text-xl text-base-content/80 leading-relaxed">
+        Phoenix Framework combined with daisyUI creates a powerful toolkit for building beautiful static websites with minimal effort.
+      </p>
     </div>
     
-    <p class="lead">
-      Phoenix Framework combined with daisyUI creates a powerful toolkit for building beautiful static websites with minimal effort.
-    </p>
+    <div class="divider"></div>
     
-    <h2>Why Phoenix for Static Sites?</h2>
-    
-    <p>
-      While Phoenix is known for its real-time capabilities and LiveView, it's also an excellent choice for static site generation. The framework provides:
-    </p>
-    
-    <ul>
-      <li>Fast compilation and build times</li>
-      <li>Powerful templating with HEEx</li>
-      <li>Built-in asset pipeline</li>
-      <li>Easy deployment options</li>
-    </ul>
-    
-    <h2>The Power of daisyUI</h2>
-    
-    <p>
-      daisyUI is a component library built on top of Tailwind CSS. It provides:
-    </p>
-    
-    <div class="alert alert-info my-6">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-      <span>daisyUI components are semantic, accessible, and themeable out of the box!</span>
+    <div>
+      <h2 class="text-3xl font-bold mb-4">Why Phoenix for Static Sites?</h2>
+      
+      <p class="text-lg leading-relaxed mb-4">
+        While Phoenix is known for its real-time capabilities and LiveView, it's also an excellent choice for static site generation. The framework provides:
+      </p>
+      
+      <ul class="list-disc list-inside space-y-2 text-lg ml-4">
+        <li>Fast compilation and build times</li>
+        <li>Powerful templating with HEEx</li>
+        <li>Built-in asset pipeline</li>
+        <li>Easy deployment options</li>
+      </ul>
     </div>
     
-    <ol>
-      <li>Pre-built, beautiful components</li>
-      <li>Multiple theme options</li>
-      <li>Semantic class names</li>
-      <li>Full Tailwind CSS compatibility</li>
-    </ol>
-    
-    <h2>Getting Started</h2>
-    
-    <p>
-      To create your own static Phoenix site with daisyUI, follow these steps:
-    </p>
-    
-    <div class="mockup-code my-6">
-      <pre data-prefix="$"><code>mix phx.new my_app --no-ecto --no-live</code></pre>
-      <pre data-prefix="$"><code>cd my_app</code></pre>
-      <pre data-prefix="$"><code>mix deps.get</code></pre>
-      <pre data-prefix="$"><code>mix tailwind.install</code></pre>
+    <div>
+      <h2 class="text-3xl font-bold mb-4">The Power of daisyUI</h2>
+      
+      <p class="text-lg leading-relaxed mb-4">
+        daisyUI is a component library built on top of Tailwind CSS. It provides:
+      </p>
+      
+      <div class="alert alert-info my-6">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        <span>daisyUI components are semantic, accessible, and themeable out of the box!</span>
+      </div>
+      
+      <ol class="list-decimal list-inside space-y-2 text-lg ml-4">
+        <li>Pre-built, beautiful components</li>
+        <li>Multiple theme options</li>
+        <li>Semantic class names</li>
+        <li>Full Tailwind CSS compatibility</li>
+      </ol>
     </div>
     
-    <h2>Deployment</h2>
-    
-    <p>
-      Once you've built your site, you can deploy it to GitHub Pages, Netlify, Vercel, or any static hosting service. The build process generates a <code>public/</code> directory with all your static assets ready to serve.
-    </p>
-    
-    <div class="card bg-base-200 my-6">
-      <div class="card-body">
-        <h3 class="card-title">Pro Tip</h3>
-        <p>Use GitHub Actions to automate your deployment process. Every push to main can trigger a new build and deployment!</p>
+    <div>
+      <h2 class="text-3xl font-bold mb-4">Getting Started</h2>
+      
+      <p class="text-lg leading-relaxed mb-4">
+        To create your own static Phoenix site with daisyUI, follow these steps:
+      </p>
+      
+      <div class="mockup-code my-6">
+        <pre data-prefix="$"><code>mix phx.new my_app --no-ecto --no-live</code></pre>
+        <pre data-prefix="$"><code>cd my_app</code></pre>
+        <pre data-prefix="$"><code>mix deps.get</code></pre>
+        <pre data-prefix="$"><code>mix tailwind.install</code></pre>
       </div>
     </div>
     
-    <h2>Conclusion</h2>
+    <div>
+      <h2 class="text-3xl font-bold mb-4">Deployment</h2>
+      
+      <p class="text-lg leading-relaxed mb-4">
+        Once you've built your site, you can deploy it to GitHub Pages, Netlify, Vercel, or any static hosting service. The build process generates a <code class="bg-base-200 px-2 py-1 rounded">public/</code> directory with all your static assets ready to serve.
+      </p>
+      
+      <div class="card bg-base-200 my-6">
+        <div class="card-body">
+          <h3 class="card-title text-2xl">Pro Tip</h3>
+          <p class="text-lg">Use GitHub Actions to automate your deployment process. Every push to main can trigger a new build and deployment!</p>
+        </div>
+      </div>
+    </div>
     
-    <p>
-      Phoenix and daisyUI make a fantastic combination for static site generation. You get the power and flexibility of Phoenix with the beautiful, pre-built components of daisyUI. Happy building!
-    </p>
+    <div>
+      <h2 class="text-3xl font-bold mb-4">Conclusion</h2>
+      
+      <p class="text-lg leading-relaxed">
+        Phoenix and daisyUI make a fantastic combination for static site generation. You get the power and flexibility of Phoenix with the beautiful, pre-built components of daisyUI. Happy building!
+      </p>
+    </div>
   </article>
 </main>
