@@ -1,0 +1,51 @@
+<!-- <ElixirT2Web.Layouts.root> lib/elixir_t2_web/components/layouts/root.html.heex:1 (elixir_t2) --><!DOCTYPE html>
+<html data-phx-loc="2" lang="en">
+  <head data-phx-loc="3">
+    <meta data-phx-loc="4" charset="utf-8">
+    <meta data-phx-loc="5" name="viewport" content="width=device-width, initial-scale=1">
+    <meta data-phx-loc="6" name="csrf-token" content="C1gBLT8TIC5lfUA_Xjk0FS4WC1UGVTwIBlSBjRzh18sO1mdB_dy1S0D_">
+    <!-- @caller lib/elixir_t2_web/components/layouts/root.html.heex:7 (elixir_t2) --><!-- <Phoenix.Component.live_title> lib/phoenix_component.ex:2256 (phoenix_live_view) --><title data-phx-loc="2257" data-default="ElixirT2" data-suffix=" · Phoenix Framework">ElixirT2 · Phoenix Framework</title><!-- </Phoenix.Component.live_title> -->
+    <link data-phx-loc="10" phx-track-static rel="stylesheet" href="assets/css/app.css">
+    <script data-phx-loc="11" defer phx-track-static type="text/javascript" src="assets/js/app.js">
+    </script>
+    <script data-phx-loc="13">
+      (() => {
+        const setTheme = (theme) => {
+          if (theme === "system") {
+            localStorage.removeItem("phx:theme");
+            document.documentElement.removeAttribute("data-theme");
+          } else {
+            localStorage.setItem("phx:theme", theme);
+            document.documentElement.setAttribute("data-theme", theme);
+          }
+        };
+        if (!document.documentElement.hasAttribute("data-theme")) {
+          setTheme(localStorage.getItem("phx:theme") || "system");
+        }
+        window.addEventListener("storage", (e) => e.key === "phx:theme" && setTheme(e.newValue || "system"));
+        
+        document.addEventListener("DOMContentLoaded", () => {
+          document
+            .querySelectorAll("button[data-phx-theme]")
+            .forEach((el) => {
+              el.addEventListener("click", () => {
+                setTheme(el.dataset.phxTheme)
+              })
+            })
+        })
+      })();
+    </script>
+  </head>
+  <body data-phx-loc="41">
+    <!-- <ElixirT2Web.PageHTML.home> lib/elixir_t2_web/controllers/page_html/home.html.heex:1 (elixir_t2) --><main data-phx-loc="1" class="p-8">
+  <h1 data-phx-loc="2" class="text-4xl font-bold mb-4">Welcome to My Static Phoenix + daisyUI Site</h1>
+  <p data-phx-loc="3" class="mb-4">This is the main page.</p>
+  <nav data-phx-loc="4" class="space-x-4">
+    <a data-phx-loc="5" href="page1.html" class="btn btn-primary">Page 1</a>
+    <a data-phx-loc="6" href="page2.html" class="btn btn-secondary">Page 2</a>
+    <a data-phx-loc="7" href="page3.html" class="btn btn-accent">Page 3</a>
+    <a data-phx-loc="8" href="article.html" class="btn btn-info">Article</a>
+  </nav>
+</main><!-- </ElixirT2Web.PageHTML.home> -->
+  <iframe hidden height="0" width="0" src="phoenix/live_reload/frame.html"></iframe></body>
+</html><!-- </ElixirT2Web.Layouts.root> -->
